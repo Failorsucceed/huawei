@@ -1,0 +1,341 @@
+@charset "utf-8";
+#wrap #header{
+	width:100%;
+	min-width:1200px;
+	background:#fff;
+}
+#wrap #header .h-top{
+	width:100%;
+	min-width:1200px;
+	height:90px;
+	background:url("../../picture/top-pic.jpg") no-repeat top center;
+}
+/*---头部导航样式开始 header nav start---*/
+#wrap .h-nav{
+	position:relative;
+	width:1200px;
+	margin:auto;
+	z-index:1;
+}
+#wrap .h-nav .h-n-left{
+	float:left;
+}
+#wrap .h-nav .h-n-right{
+	float:right;
+	margin-right:-20px;
+}
+#wrap .h-nav li{
+	position:relative;
+	float:left;
+	padding:8px 10px;
+	background:#fff;
+}
+#wrap .h-nav li + li:before{
+	position:absolute;
+	content:'';
+	width:1px;
+	height:10px;
+	top:12px;
+	left:-1px;
+	background:#c8c8c8;
+}
+#wrap .h-nav li.none:before{
+	display:none;
+}
+/*--相同样式--*/
+#wrap .h-nav li.more:hover .m-serve,#wrap li.shopping:hover div.car{
+	display:block;
+}
+#wrap .h-nav li.more:hover,#wrap li.shopping:hover{
+	box-shadow:0 4px 0 0 #fff,2px 0 5px 0 #c8c8c8,-2px 0 5px 0 #c8c8c8;
+}
+
+
+
+/*--头部导航左边样式开始 header nav left start--*/
+#wrap .h-nav a.more{
+	padding-right:15px;
+}
+#wrap .h-nav a.more:after{
+	position:absolute;
+	content:'';
+	width:0;
+	height:0;
+	top:12px;
+	right:8px;
+	border:6px solid transparent;
+	border-top-color:#a1a1a1;
+}
+#wrap .h-nav li.more:hover a.more:after{
+	top:7px;
+	border:6px solid transparent;
+	border-bottom-color:#a1a1a1;
+}
+#wrap li.more .m-serve{
+	position:absolute;
+	display:none;
+	width:150px;
+	height:270px;
+	top:32px;
+	right:0px;
+	padding:0 5px;
+	background:#fff;
+	text-align:center;
+	box-shadow:0 0 5px 1px #c8c8c8;
+	z-index:-1;
+}
+#wrap li.more .m-s-user{
+	padding:8px 0;
+	line-height:30px;
+	border-bottom:1px solid #c8c8c8;
+}
+#wrap li.more .m-s-user a,.m-s-er a{
+	color:#222;
+}
+#wrap li.more .m-s-user a:hover,.m-s-er a:hover{
+	color:#CA141D;
+}
+#wrap li.more .m-s-er{
+	padding-top:20px;
+	color:#717171;
+}
+/*--头部导航样式左边结束 end--*/
+
+
+/*--头部导航样式右边开始 header nav right start--*/
+#wrap li.shopping a.s-car{
+	padding-left:25px;
+	padding-right:20px;
+}
+#wrap li.shopping a.s-car:before{
+	position:absolute;
+	content:'';
+	width:14px;
+	height:14px;
+	top:8px;
+	left:10px;
+	background:url("../../images/icon-common.png") no-repeat;
+}
+#wrap li.shopping div.car{
+	position:absolute;
+	display:none;
+	width:460px;
+	height:230px;
+	top:36px;
+	right:0px;
+	text-align:center;
+	background:#fff;
+	box-shadow:0 0 5px 1px #c8c8c8;
+	z-index:-1;
+}
+#wrap div.car span{
+	display:block;
+	width:100px;
+	height:100px;
+	margin:40px auto 15px;
+	background:url("../../images/h-shop-car.png") no-repeat;
+}
+#wrap div.car p{
+	color:#c8c8c8;
+}
+/*--头部导航样式结束 header nav end--*/
+
+
+/*--头部vamll导航样式 start--*/
+
+#wrap .h-nav-vmall{
+	width:1200px;
+	height:50px;
+	margin:8px auto;
+}
+#wrap .h-nav-vmall .logo{
+	width:225px;
+	height:50px;
+}
+#wrap ul.vmall > li{
+	float:left;
+	height:100%;
+	padding:0 10px;
+	line-height:50px;
+	font-size:16px;
+}
+#wrap ul.vmall > li a{
+	color:#333;
+	padding-bottom:5px;
+}
+#wrap ul.vmall > li + li a:hover{
+	color:#cc0033;
+	border-bottom:2px solid #c03;
+}
+#wrap .h-nav-vmall form{
+	position:relative;
+	float:right;
+	width:330px;
+}
+#wrap .h-nav-vmall form input{
+	height:25px;
+	width:330px;
+	margin-top:10px;
+	border:none;
+	border-bottom:1px solid #ccc;
+	text-indent:10px;
+	outline:none;
+}
+#wrap .h-nav-vmall form:after{
+	position:absolute;
+	content:'';
+	width:20px;
+	height:20px;
+	top:7px;
+	right:0;
+	background:url("../../images/icon-common.png") no-repeat 0 -25px;
+}
+/*--vmall end--*/
+
+
+/*--头部轮播样式开始 hearder banner start--*/
+#header .h-banner{
+	position:relative;
+	width:100%;
+	min-width:1200px;
+	height:450px;
+}
+#header .h-banner .h-b-pic li{
+	position:absolute;
+	top:0;
+	left:0;
+}
+#header .h-b-pic img{
+	height:450px;
+	width:100%;
+}
+#header .h-b-dot{
+	position:absolute;
+	width:220px;
+	bottom:25px;
+	left:0;
+	right:0;
+	margin:auto;
+}
+#header .h-b-dot li{
+	float:left;
+	width:10px;
+	height:10px;
+	margin:5px;
+	border:1px solid #fff;
+	border-radius:50%;
+}
+#header .h-b-text{
+	position:relative;
+	width:1200px;
+	height:450px;
+	margin:auto;
+}
+#header .h-b-text ul.text li{
+	width:245px;
+	height:60px;
+	padding-top:15px;
+	background:rgba(0,0,0,.6);
+}
+#header .h-b-text ul.text li:hover{
+	background:rgba(0,0,0,.7);
+}
+#header .h-b-text ul.text li > p{
+	font-size:16px;
+	margin-left:20px;
+}
+#header .h-b-text ul.text li p.t-cont{
+	position:relative;
+	font-size:14px;
+	margin-top:5px;
+}
+#header .h-b-text p.t-cont i{
+	position:absolute;
+	width:8px;
+	height:14px;
+	right:10px;
+	top:5px;
+	background:url("../../images/icon-common.png") no-repeat -9px -213px;
+}
+#header .h-b-text ul.text li:hover p.t-cont i{
+	background:url("../../images/icon-common.png") no-repeat -1px -213px;
+}
+#header .h-b-text p.t-cont a:hover{
+	color:#fff;
+}
+#header .h-b-text ul.text .t-list-pic{
+	position:absolute;
+	display:none;
+	width:650px;
+	height:450px;
+	top:0;
+	left:245px;
+	background:#fff;
+}
+#header .h-b-text ul.text li:hover .t-list-pic{
+	display:block;
+}
+#header div.t-list-pic .list-h{
+	width:590px;
+	padding:0 25px 0 35px;
+	line-height:75px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-size:14px;
+}
+#header div.t-list-pic .list-h a{
+	color:#c03;
+}
+#header div.t-list-pic .list-h span{
+	float:right;
+	color:#c03;
+}
+#header div.t-list-pic .lists{
+	width:590px;
+	padding:20px 25px 35px 35px;
+	border-bottom:1px solid #ccc;
+}
+#header div.t-list-pic .lists > a{
+	display:inline-block;
+	padding-top:20px;
+	padding-right:25px;
+	font-size:14px;
+	color:#222;
+}
+#header div.t-list-pic .lists > a:hover{
+	color:#c03;
+}
+#header div.t-list-pic .list-pic{
+	width:100%;
+	height:236px;
+}
+#header div.t-list-pic .list-pic > a{
+	float:left;
+	width:161px;
+	height:100%;
+	text-align:center;
+	background:#fff;
+	transition:.3s;
+}
+#header div.t-list-pic .list-pic > a + a{
+	border-left:1px solid #ccc;
+}
+#header div.t-list-pic .list-pic > a img{
+	width:115px;
+	margin:25px 0;
+}
+#header div.t-list-pic .list-pic > a p{
+	font-size:14px;
+}
+#header div.t-list-pic .list-pic > a span{
+	display:block;
+	font-size:14px;
+	margin-top:8px;
+	color:#c03;
+}
+#header div.t-list-pic .list-pic > a:hover{
+	margin-top:-3px;
+	box-shadow:0 5px 2px #eee;
+	color:#c8c8c8;
+}
+/*--banner end--*/
